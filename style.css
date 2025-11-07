@@ -117,7 +117,7 @@ header.navbar {
     top: 82%;
     left: 51%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(196, 188, 188);
     text-align: center;
     /* background-color: rgba(0, 0, 0, 0.3); */
     /* padding: 485px 4px; */
@@ -164,7 +164,7 @@ header.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: #c9c6c6;
   background-image: url('fundo-cacto.png');
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -251,12 +251,14 @@ button:hover {
 .dashboard {
   padding: 40px;
   text-align: center;
-  background: #f8f8f8;
+  background: linear-gradient(to right, #8d8f8d, #fafcfa, #8d8f8d, );
   font-family: Arial, sans-serif;
+  
 }
 .card-produtos h2 {
   margin-bottom: 20px;
   color: #333;
+  
 }
 .produtos-container {
   display: grid;
@@ -269,14 +271,13 @@ button:hover {
   margin: 57px auto; /* centraliza o container */
 }
 .produto {
-background: linear-gradient(180deg, #0a550a,#87b68c);
+background: linear-gradient(180deg, #0a550a,#528557);
 border-radius: 58px 58px 16px 16px ;
 text-align: center;
 transition: transform 0.3s ease,box-shadow 0.3s ease;
-
 box-sizing: border-box;
 overflow: hidden;
-
+box-shadow: #385238 0 4px 15px;
 }
 
 .produto h3,
@@ -593,7 +594,117 @@ canvas {
   transform: scale(1.06);
 }
 
+.aba-solicitacao { 
+height: 10px;
+color: #087c08;
+}
 
 
+.secao-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 80px auto;
+  flex-wrap: wrap; /* fica empilhado no celular */
+}
+
+.container-pro,
+.container-sol {
+  width: 40%;
+  min-width: 340px;
+  background: linear-gradient(180deg, #087c08, #5fa86a);
+  border-radius:  0 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  padding-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-pro:hover,
+.container-sol:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container-pro h2,
+.container-sol h2 {
+  background-color: #b8d4bf;
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  font-family: "Segoe UI", sans-serif;
+  border-radius: 0 30px;
+  text-align: center;
+}
+
+.container-pro p,
+.container-sol p {
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.botao-pr,
+.botao-sol {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.botao-pr, 
+.botao-sol{
+  display: inline-block;
+  background: linear-gradient(180deg, #0a550a, #87b68c);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: transform 0.3s, background 0.4s;
+  font-family: "Segoe UI", sans-serif;
+  border: 1px solid #0a550a;
+}
+
+.botao-pr:hover,
+.botao-sol:hover {
+  background: linear-gradient(180deg, #087c08, #5fa86a);
+  transform: scale(1.08);
+}
+
+.Quem-somos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 80px auto;
+    height: 54%;
+    width: 87%;
+    background: linear-gradient(180deg, #087c08, #5fa86a);
+    border-radius: 20px;
+}
 
 
+.Quem-somos h2 {
+
+  background-color: #b8d4bf;
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  font-family: "Segoe UI", sans-serif;
+  border-radius: 0 30px;
+  text-align: center;
+}
+
+.Quem-somos h3 {
+  padding:   20px;
+  text-align: center;
+  color: #030703;
+  font-family: "Segoe UI", sans-serif;
+ }
+
+.Quem-somos p {
+ text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  padding: 10px 20px;
+  color: #fff;
+
+}
