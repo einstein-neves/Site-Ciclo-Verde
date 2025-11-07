@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciclo Verde - Rastreamento e Pedidos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</head>
+
+<body>
+ <header class="navbar">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo Ciclo Verde">
+    </div>
+
+    <div class="titulo">
+      <h1>Ciclo Verde</h1>
+      <p>Gestão Sustentável de Sementes 🌱</p>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="acessibilidade.html">Acessibilidade</a>
+      <a href="quemsomos.html">Quem Somos</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="propostas.html">Propostas</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="barra-buscar">
+      <input type="text" placeholder="Buscar sementes...">
+      <button  type="submit" class="botao-buscar">🔍</button>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="rastreio">
+      <h2>Rastreamento de Pedidos</h2>
+      <div class="linha">
+        <div class="etapa ativo"><div class="bolinha"></div><span>Origem</span></div>
+        <div class="etapa"><div class="bolinha"></div><span>Em Trânsito</span></div>
+        <div class="etapa"><div class="bolinha"></div><span>Saindo para Entrega</span></div>
+        <div class="etapa"><div class="bolinha"></div><span>Entregue</span></div>
+      </div>
+    </section>
+
+    <section class="mapa-container">
+      <h2>Rastreamento em Tempo Real</h2>
+      <div id="map"></div>
+    </section>
+
+    <section class="grafico-container">
+      <h2>Saída de Pedidos por Mês</h2>
+      <canvas id="graficoPedidos"></canvas>
+    </section>
+
+    <section class="info">
+      <h2>Funcionalidades</h2>
+      <ul>
+        <li>Gestão Inteligente de Sementes</li>
+        <li>Blockchain e QR Code</li>
+        <li>Monitoramento em Tempo Real</li>
+        <li>Análise Gráfica de Pedidos</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌿Ciclo Verde © 2025 - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
